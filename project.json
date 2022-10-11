@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "wx_2048",
+  "id": "a36463ee-1c11-4264-8126-ab34fdf44aa6",
+  "version": "2.4.9",
+  "isNew": false
+}
