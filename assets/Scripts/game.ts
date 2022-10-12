@@ -80,7 +80,7 @@ export default class NewClass extends cc.Component {
     }
 
     init() {
-       // cc.sys.localStorage.removeItem('userData_2');
+        //cc.sys.localStorage.removeItem('userData');
         this.getUserInfo();
         this.arrayGameType = new Array();
         this.arrayGameType.push(this.userData.game_3);
@@ -136,9 +136,11 @@ export default class NewClass extends cc.Component {
     }
     getUserInfo() {
         let val = decodeURIComponent(cc.sys.localStorage.getItem('userData'));
-        if (val != ""){
+        
+        if (val){
          this.userData = JSON.parse(val);
         } else {
+            console.debug("null");
             this.userData = {
                 game_3: {
                     title: '3x3',
